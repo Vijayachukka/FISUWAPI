@@ -1,8 +1,7 @@
-package stepdefs;
+package com.fisPages.stepdefs;
 
-import MottamcPages.DigitalWindow.digitalServicesFunctions;
-import MottamcPages.LoginPage;
-import io.cucumber.java.After;
+import com.fisPages.DigitalWindow.digitalServicesFunctions;
+import com.fisPages.UIActions.LoginPage;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import io.cucumber.java.en.And;
@@ -28,7 +27,7 @@ public class UIStepDef
         loginPage.selectLanguage();
 
     }
-    @After
+//   @After
     public void closeBrowser()
     {
         loginPage.closeBrowser();
@@ -108,4 +107,38 @@ public class UIStepDef
         loginPage.setScenario(scenarioName);
 
     }
+
+    @When("^search for the \"([^\"]*)\" in ebay search bar$")
+    public void searchForTheInEbaySearchBar(String searchText)
+    {
+        loginPage.inputSearchTextbox(searchText);
+
+    }
+
+    @And("^click on the first \"([^\"]*)\" book in the list$")
+    public void clickOnTheFirstBookInTheList(String bookNum) {
+        loginPage.selectProduct(bookNum);
+    }
+
+    @And("^click on the \"([^\"]*)\" button on product page$")
+    public void clickOnTheButtonOnProductPage(String buttonName)
+    {
+        loginPage.clickButton(buttonName);
+
+    }
+
+    @Then("^cart is updated with product details$")
+    public void cartIsUpdatedWithProductDetails()
+    {
+        loginPage.verifyShoppingCart();
+    }
+
+    @And("^switch to the another tab$")
+    public void switchToTheAnotherTab()
+    {
+        loginPage.switchToTab();
+    }
+
+
+
 }

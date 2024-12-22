@@ -1,0 +1,4 @@
+fisPages\DigitalWindow\digitalServicesFunctions.class
+stepdefs\UIStepDef.class
+stepdefs\APIStepdef.class
+fisPages\UIActions\LoginPage.class

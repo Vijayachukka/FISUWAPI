@@ -1,6 +1,6 @@
-package MottamcPages.DigitalWindow;
+package com.fisPages.DigitalWindow;
 
-import MottamcPages.LoginPage;
+import com.fisPages.UIActions.LoginPage;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementClickInterceptedException;

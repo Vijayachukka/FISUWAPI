@@ -7,11 +7,11 @@ import org.junit.runner.RunWith;
         plugin ={"pretty", "html:target/reports.html",
         "json:target/cucumber.json",
         "junit:target/cucumber.xml"},
-        features = {"src/test/resources/features"},
-        glue = {"com/fisPages/stepdefs"},
-        tags = "@apitest1",
-        monochrome = true)
-public class FISTestRunner
+        glue={"com/fisPages/stepdefs"},
+        features="src/test/resources/features/",
+        tags="@apitest1",
+        monochrome=true)
+public class APITestRunner
 {
 
 }

@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: Test to Navigate to ebay Homepage and verify the details
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 16.339 sec <<< FAILURE! - in Test to Navigate to ebay Homepage and verify the details
+Test to add product to cart in ebay Home page and verify the details(Test to Navigate to ebay Homepage and verify the details)  Time elapsed: 16.339 sec  <<< ERROR!
+java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
+	at java.base/java.util.Objects.checkIndex(Objects.java:372)
+	at java.base/java.util.ArrayList.get(ArrayList.java:459)
+	at fisPages.UIActions.LoginPage.switchToTab(LoginPage.java:137)
+	at stepdefs.UIStepDef.switchToTheAnotherTab(UIStepDef.java:140)
+	at ?.switch to the another tab(file:///C:/Users/Vijay/Documents/assigments/FISUWAPI/src/test/resources/features/ebayUI.feature:9)
+
